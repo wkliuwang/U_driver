@@ -1,0 +1,16 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\driverentry.obj \
+
+
+
+
+
+# lowercased
+BASEDIR=f:\winddk
+OBJECT_ROOT=f:\winddk
+MAKEDIR_LOWERCASE=f:\usbfilter\usbfilter
+OBJ_PATH=f:\usbfilter\usbfilter
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0
