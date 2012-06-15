@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UsbLocker", "UsbLocker\UsbLocker.vcproj", "{0CAA5E8E-3566-43F1-B629-ECB063FB9D33}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aaa", "aaa", "{06421504-5419-4254-AA4B-87CA107588C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "USBLocker", "F:\U盘过滤驱动src+bin\Src\USBLocker\USBLocker.vcproj", "{C41BAD4D-B401-49E0-9A38-B3113087A79A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CAA5E8E-3566-43F1-B629-ECB063FB9D33}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0CAA5E8E-3566-43F1-B629-ECB063FB9D33}.Debug|Win32.Build.0 = Debug|Win32
+		{0CAA5E8E-3566-43F1-B629-ECB063FB9D33}.Release|Win32.ActiveCfg = Release|Win32
+		{0CAA5E8E-3566-43F1-B629-ECB063FB9D33}.Release|Win32.Build.0 = Release|Win32
+		{C41BAD4D-B401-49E0-9A38-B3113087A79A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C41BAD4D-B401-49E0-9A38-B3113087A79A}.Debug|Win32.Build.0 = Debug|Win32
+		{C41BAD4D-B401-49E0-9A38-B3113087A79A}.Release|Win32.ActiveCfg = Release|Win32
+		{C41BAD4D-B401-49E0-9A38-B3113087A79A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C41BAD4D-B401-49E0-9A38-B3113087A79A} = {06421504-5419-4254-AA4B-87CA107588C8}
+	EndGlobalSection
+EndGlobal

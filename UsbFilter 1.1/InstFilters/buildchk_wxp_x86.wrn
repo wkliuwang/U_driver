@@ -1,0 +1,5 @@
+ERROR - "f:\usbfilter\instfilters\objchk_wxp_x86\i386\_objects.mac" file time is slightly in the future (0x1cd4acd81338200 (6/15/2012 8:04:36) vs. 0x1cd4acd801490f8 (6/15/2012 8:04:34)).
+
+1>warnings in directory f:\usbfilter\instfilters
+1>f:\usbfilter\instfilters\instfilters.cpp(242) : warning C4996: 'ExAllocatePool': was declared deprecated
+1>f:\usbfilter\instfilters\instfilters.cpp(266) : warning C4996: 'ExAllocatePool': was declared deprecated

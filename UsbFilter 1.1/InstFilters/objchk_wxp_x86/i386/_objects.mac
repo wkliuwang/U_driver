@@ -1,0 +1,16 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\instfilters.obj \
+
+
+
+
+
+# lowercased
+BASEDIR=f:\winddk
+OBJECT_ROOT=f:\winddk
+MAKEDIR_LOWERCASE=f:\usbfilter\instfilters
+OBJ_PATH=f:\usbfilter\instfilters
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0

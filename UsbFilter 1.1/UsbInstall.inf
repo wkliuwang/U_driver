@@ -1,0 +1,41 @@
+[Version]
+Signature=$CHICAGO$
+Provider=%MFGNAME%
+
+[DestinationDirs]
+DefaultDestDir=10,system32\drivers
+FiltJectCopyFiles=11
+
+[SourceDisksFiles]
+USBFilter.sys=1,BWL,
+
+[SourceDisksNames]
+1=%INSTDISK%,,,""
+
+;------------------------------------------------------------------------------
+;  Windows 2000 Sections
+;------------------------------------------------------------------------------
+
+[DefaultInstall.ntx86]
+CopyFiles=DriverCopyFiles,FiltJectCopyFiles
+
+[DriverCopyFiles]
+USBFilter.sys,,,0x60		
+
+[DefaultInstall.ntx86.services]
+AddService=USBFilter,,FilterService
+
+[FilterService]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%10%\system32\drivers\USBFilter.sys
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+MFGNAME="Zdg"
+INSTDISK="Zdg Disk"
+DESCRIPTION="USB Device Filter Driver"
