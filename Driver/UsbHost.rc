@@ -1,0 +1,221 @@
+//Microsoft Developer Studio generated resource script. 
+// 
+#include "resource.h" 
+ 
+#define APSTUDIO_READONLY_SYMBOLS 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Generated from the TEXTINCLUDE 2 resource. 
+// 
+#include "afxres.h" 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+#undef APSTUDIO_READONLY_SYMBOLS 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// Chinese (P.R.C.) resources 
+ 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS) 
+#ifdef _WIN32 
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED 
+#pragma code_page(936) 
+#endif //_WIN32 
+ 
+#ifdef APSTUDIO_INVOKED 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// TEXTINCLUDE 
+// 
+ 
+1 TEXTINCLUDE DISCARDABLE  
+BEGIN 
+    "resource.h\0" 
+END 
+ 
+2 TEXTINCLUDE DISCARDABLE  
+BEGIN 
+    "#include ""afxres.h""\r\n" 
+    "\0" 
+END 
+ 
+3 TEXTINCLUDE DISCARDABLE  
+BEGIN 
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n" 
+    "#define _AFX_NO_OLE_RESOURCES\r\n" 
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n" 
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n" 
+    "\r\n" 
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n" 
+    "#ifdef _WIN32\r\n" 
+    "LANGUAGE 4, 2\r\n" 
+    "#pragma code_page(936)\r\n" 
+    "#endif //_WIN32\r\n" 
+    "#include ""res\\UsbHost.rc2""  // non-Microsoft Visual C++ edited resources\r\n" 
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n" 
+    "#endif\r\n" 
+    "\0" 
+END 
+ 
+#endif    // APSTUDIO_INVOKED 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Icon 
+// 
+ 
+// Icon with lowest ID value placed first to ensure application icon 
+// remains consistent on all systems. 
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RS232USB.ico" 
+IDR_YSU                 ICON    DISCARDABLE     "res\\Ysu.ico" 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Dialog 
+// 
+ 
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55 
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU 
+CAPTION "关于 UsbHost" 
+FONT 9, "宋体" 
+BEGIN 
+    ICON            IDR_YSU,IDC_STATIC,11,17,21,21 
+    DEFPUSHBUTTON   "确 定",IDOK,178,7,50,14,WS_GROUP 
+    LTEXT           "UsbHost 1.04 版",IDC_STATIC,40,13,119,8,SS_NOPREFIX 
+    LTEXT           "燕山大学信息科学与工程学院宽带通信技术研究室", 
+                    IDC_STATIC,40,31,181,11 
+END 
+ 
+IDD_USBHOST_DIALOG DIALOGEX 0, 0, 341, 203 
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU 
+EXSTYLE WS_EX_APPWINDOW 
+CAPTION "UsbHost" 
+FONT 9, "宋体" 
+BEGIN 
+    PUSHBUTTON      "连  接",IDC_LINK,9,7,51,15 
+    PUSHBUTTON      "断  开",IDC_CUT,72,7,51,15 
+    CTEXT           "RS232-USB       选择波特率：",IDC_STATUS,137,8,118,14,0, 
+                    WS_EX_CLIENTEDGE | WS_EX_STATICEDGE 
+    PUSHBUTTON      "发  送",IDC_SEND,273,63,51,15 
+    EDITTEXT        IDC_SEND_DATA,9,37,251,68,ES_MULTILINE | ES_AUTOVSCROLL |  
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL 
+    COMBOBOX        IDC_BAUDRATE,266,8,67,81,CBS_DROPDOWN | WS_VSCROLL |  
+                    WS_TABSTOP,WS_EX_CLIENTEDGE 
+    EDITTEXT        IDC_RECV_DATA,9,122,252,72,ES_MULTILINE | ES_AUTOVSCROLL |  
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL 
+    PUSHBUTTON      "打  开",IDC_OPEN,273,39,51,15 
+    PUSHBUTTON      "清  除",IDC_CLEAROPEN,273,86,51,15 
+    PUSHBUTTON      "保  存",IDC_SAVE,273,123,51,15 
+    PUSHBUTTON      "清  除",IDC_CLEARSAVE,273,147,51,15 
+    PUSHBUTTON      "退  出",IDC_END,273,171,51,15 
+    CTEXT           "USB发送",IDC_STATIC,68,26,114,9 
+    CTEXT           "USB接收",IDC_STATIC,70,111,114,9 
+END 
+ 
+ 
+#ifndef _MAC 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Version 
+// 
+ 
+VS_VERSION_INFO VERSIONINFO 
+ FILEVERSION 1,0,0,1 
+ PRODUCTVERSION 1,0,0,1 
+ FILEFLAGSMASK 0x3fL 
+#ifdef _DEBUG 
+ FILEFLAGS 0x1L 
+#else 
+ FILEFLAGS 0x0L 
+#endif 
+ FILEOS 0x4L 
+ FILETYPE 0x1L 
+ FILESUBTYPE 0x0L 
+BEGIN 
+    BLOCK "StringFileInfo" 
+    BEGIN 
+        BLOCK "080404B0" 
+        BEGIN 
+            VALUE "CompanyName", "\0" 
+            VALUE "FileDescription", "UsbHost Microsoft 基础类应用程序\0" 
+            VALUE "FileVersion", "1, 0, 0, 1\0" 
+            VALUE "InternalName", "UsbHost\0" 
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0" 
+            VALUE "LegalTrademarks", "\0" 
+            VALUE "OriginalFilename", "UsbHost.EXE\0" 
+            VALUE "ProductName", "UsbHost 应用程序\0" 
+            VALUE "ProductVersion", "1, 0, 0, 1\0" 
+        END 
+    END 
+    BLOCK "VarFileInfo" 
+    BEGIN 
+        VALUE "Translation", 0x804, 1200 
+    END 
+END 
+ 
+#endif    // !_MAC 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// DESIGNINFO 
+// 
+ 
+#ifdef APSTUDIO_INVOKED 
+GUIDELINES DESIGNINFO DISCARDABLE  
+BEGIN 
+    IDD_ABOUTBOX, DIALOG 
+    BEGIN 
+        LEFTMARGIN, 7 
+        RIGHTMARGIN, 228 
+        TOPMARGIN, 7 
+        BOTTOMMARGIN, 48 
+    END 
+ 
+    IDD_USBHOST_DIALOG, DIALOG 
+    BEGIN 
+        LEFTMARGIN, 7 
+        RIGHTMARGIN, 334 
+        TOPMARGIN, 7 
+        BOTTOMMARGIN, 196 
+    END 
+END 
+#endif    // APSTUDIO_INVOKED 
+ 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// String Table 
+// 
+ 
+STRINGTABLE DISCARDABLE  
+BEGIN 
+    IDS_ABOUTBOX            "关于 UsbHost(&A)..." 
+END 
+ 
+#endif    // Chinese (P.R.C.) resources 
+///////////////////////////////////////////////////////////////////////////// 
+ 
+ 
+ 
+#ifndef APSTUDIO_INVOKED 
+///////////////////////////////////////////////////////////////////////////// 
+// 
+// Generated from the TEXTINCLUDE 3 resource. 
+// 
+#define _AFX_NO_SPLITTER_RESOURCES 
+#define _AFX_NO_OLE_RESOURCES 
+#define _AFX_NO_TRACKER_RESOURCES 
+#define _AFX_NO_PROPERTY_RESOURCES 
+ 
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS) 
+#ifdef _WIN32 
+LANGUAGE 4, 2 
+#pragma code_page(936) 
+#endif //_WIN32 
+#include "res\UsbHost.rc2"  // non-Microsoft Visual C++ edited resources 
+#include "l.chs\afxres.rc"          // Standard components 
+#endif 
+ 
+///////////////////////////////////////////////////////////////////////////// 
+#endif    // not APSTUDIO_INVOKED 
